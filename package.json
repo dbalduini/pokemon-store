@@ -1,0 +1,30 @@
+{
+  "name": "pokemon-store",
+  "version": "1.0.0",
+  "description": "Pokemon Store tests transactions with the pagar.me API",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=dev node index.js",
+    "test": "NODE_ENV=test nyc mocha --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "*",
+    "joi": "^10.6.0",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "sequelize": "^4.4.2",
+    "sqlite3": "^3.1.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "sinon": "^2.4.1",
+    "supertest": "^3.0.0"
+  }
+}
