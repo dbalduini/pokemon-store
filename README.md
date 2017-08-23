@@ -16,14 +16,6 @@ The *standardjs* needs to be installed as a global dependency.
  npm install standard --global
 ```
 
-### Environment
-
-The `PAGARME_API_KEY` env var is required for all environments (test, dev and prod).
-
-```sh
-export PAGARME_API_KEY=<YOUR_API_KEY>
-```
-
 ### Installation
 
 Run the command above to install all dependencies:
@@ -32,15 +24,13 @@ Run the command above to install all dependencies:
 npm install
 ```
 
-### Production
+### Environment
 
-On production, the following command should be used to start the app:
+The `PAGARME_API_KEY` env var is required for all environments (test, dev and prod).
 
 ```sh
-NODE_ENV=production node index.js
+export PAGARME_API_KEY=<YOUR_API_KEY>
 ```
-
-**But it is not available right now due the dependency of the sqlite.**
 
 ## Routes
 
@@ -80,5 +70,14 @@ POST /orders/pokemon
   "quantity":3
 }
 ```
+
+## Production
+
+On production, the following command should be used to start the app:
+
+```sh
+NODE_ENV=production node index.js
+```
+**But it is not available for now due the dependency of the sqlite.**
 
 ---------------------------
